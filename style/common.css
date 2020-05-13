@@ -1,0 +1,444 @@
+* {
+  outline: none;
+}
+/* 通用按钮 红色背景<button>*/
+.primary-btn {
+  background-color: #ff5a59;
+  color: white;
+  border: 0.5px solid #ff5a59;
+  border-radius: 4px;
+  height: 36px;
+  outline: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+/* 默认按钮 白色背景<button> */
+.default-btn {
+  background-color: white;
+  color: #979797;
+  border: 0.5px solid #d5d5d5;
+  border-radius: 4px;
+  height: 36px;
+  outline: none;
+  padding: 0 20px;
+}
+
+/* 不可点击按钮 <button> */
+.invalid-btn {
+  background-color: #ffcecd;
+  color: white;
+  border: 0.5px solid #ffcecd;
+  border-radius: 4px;
+  height: 36px;
+  outline: none;
+  padding: 0 20px;
+}
+
+/* 查询选中 */
+.choosed-btn {
+  background-color: white;
+  color: #ff5a59;
+  border: 0.5px solid #d5d5d5;
+  border-radius: 4px;
+  height: 36px;
+  outline: none;
+  padding: 0 20px;
+  position: relative;
+}
+.choosed-icon {
+  position: absolute;
+  display: inline-block;
+  background-size: contain;
+  background: url(../../images/check.png);
+  width: 16px;
+  height: 16px;
+  transform: scale(0.6);
+  bottom: 6px;
+  right: 6px;
+}
+
+/* 操作栏按钮<button> */
+.handle-btn {
+  border: 0.5px solid #ff706f;
+  color: #ff706f;
+  padding: 2px 8px;
+  outline: none;
+  background: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* 推荐 图标 */
+.tag-logo {
+  display: inline-block;
+  background: #ffe4d1;
+  font-size: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #ffa35c;
+  text-align: center;
+  height: 16px;
+  vertical-align: middle;
+  line-height: 16px;
+  padding: 0 6px;
+}
+
+/* 交易成功 */
+.deal-success {
+  color: #3ed1a5;
+}
+/* 交易失败 */
+.deal-failed {
+  color: #ff5857;
+}
+/* 默认输入框 */
+.default-input {
+  outline: none;
+  border: 1px #cacaca solid;
+  border-radius: 4px;
+  height: 20px;
+  padding: 4px 4px;
+  font-size: 12px;
+}
+
+.over-table{
+  position: relative;
+  color:#6e6e6e;
+  margin-bottom: 10px;
+}
+.over-table>span{
+  color:black;
+}
+.over-table>span>img{
+  transform: scale(0.5);
+  /* position: relative; */
+  /* top:10px; */
+}
+.print-and-down{
+  position: absolute;
+  right:10px;
+  bottom:0;
+  cursor: pointer;
+  bottom: -6px;
+}
+/* 表格样式 */
+table{
+  width:100%;
+}
+th {
+  background: #f5f5f5;
+  padding: 4px 20px;
+  color: #777777;
+  font-weight: normal;
+  padding: 20px 18px;
+  text-align: center;
+}
+td {
+  padding: 20px 18px;
+  border-bottom: 0.5px solid #f7f7f7;
+  color: #4e4e4e;
+  text-align: center;
+}
+
+/* 输入框占位符 */
+::-webkit-input-placeholder {
+  color: #a5a5a5;
+}
+::-moz-placeholder {
+  color: #a5a5a5;
+} /* firefox 19+ */
+:-ms-input-placeholder {
+  color: #a5a5a5;
+} /* Internet Explorer 10+ */
+:-moz-placeholder {
+  color: #a5a5a5;
+} /* firefox 14-18 */
+
+/* 输入框光标颜色 */
+input {
+  caret-color: #a5a5a5;
+}
+
+/* 选择框样式 */
+select {
+  height: 30px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../../images/select-arrow.png") no-repeat right center white;
+  color: #4e4e4e;
+  outline: none;
+  border-radius: 4px;
+  border: 1px #cacaca solid;
+  background-position: 94%;
+  background-size: 10px;
+  padding: 4px 20px 4px 4px;
+}
+select:before {
+  content: "432e23e23";
+  width: 10px;
+  height: 10px;
+  background-color: #ff5a59;
+  color: #ff5a59;
+  font-size: 12px;
+  position: absolute;
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
+}
+
+/* radio默认样式 */
+input[type="radio"] + label::before {
+  content: "\a0"; /*不换行空格*/
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 0.4em;
+  border-radius: 50%;
+  border: 1px solid #378be0;
+  text-indent: 0.15em;
+  line-height: 1;
+  transform: scale(0.5);
+  /* transform-origin: 0% center; */
+  vertical-align: middle;
+  position: relative;
+  left: 6px;
+  bottom: 1px;
+}
+input[type="radio"]:checked + label::before {
+  background-color: #378be0;
+  background-clip: content-box;
+  padding: 0.1em;
+  width: 1.2em;
+  height: 1.2em;
+  transform: scale(0.5);
+  /* transform-origin: 0% center; */
+  vertical-align: middle;
+  position: relative;
+  left: 6px;
+  bottom: 1px;
+}
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+label {
+  cursor: pointer;
+}
+
+/* 进度条 */
+.process-bar-outer {
+  height: 4px;
+  width: 100%;
+  background: #f3f3f3;
+  bottom: 8px;
+  border-radius: 4px;
+}
+.process-bar-inner {
+  background: #ff5a59;
+  height: 4px;
+  border-radius: 4px;
+}
+
+/* 以下为选项卡样式 */
+/* 宽度为屏宽的一半，高度为屏高的一半，然后居中 */
+.tab-box {
+  /* width: 50vw;
+  height: 50vh;
+  margin: 0 auto; */
+  overflow: hidden;
+}
+/* 清除li样式 */
+.tab-box > ul,
+.tab-box > ul > li {
+  list-style: none;
+  /* 将三个li宽度平分，高度60px */
+  /* flex: 1; */
+  /* height: 60px; */
+  margin-right: 40px;
+}
+.tab-box > ul > li:after {
+  content: "";
+
+  display: block;
+
+  overflow: hidden;
+
+  height: 0;
+
+  clear: both;
+
+  visibility: hidden;
+}
+/* 将ul相对定位，目的是让内容的div绝对定位时相对ul定位，否则会相对body定位 */
+/* ul弹性盒，目的是让li横着排，也可以将li浮动或者转行内块 */
+.tab-box > ul {
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+
+/* input隐藏 */
+.tab-box > ul > li > input {
+  display: none;
+}
+/* 设置input的下一个节点label的样式 */
+.tab-box > ul > li > input + label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+  line-height: 60px;
+}
+/* 设置div内容的基础样式 隐藏内容div*/
+.tab-box > ul > li > input + label + div {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+/* input选中状态时候对应的label的样式 */
+.tab-box > ul > li > input:checked + label {
+  color: red;
+  /* border-bottom: 1px solid red; */
+  background: url(../../images/tab-bar.png) no-repeat bottom;
+}
+.tab-box > ul > li > input[type="radio"] + label:before {
+  border: 0;
+  background: transparent !important;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+/* input选中时候显示对应的div */
+.tab-box > ul > li > input:checked + label + div {
+  display: block;
+}
+
+/* 分页样式 */
+.pagination {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin:10px 0;
+}
+.pagination > .square {
+  border: 1px solid black;
+  border-radius: 4px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 6px;
+}
+.pagination > span.next-page {
+  margin: 0 8px;
+  cursor: pointer;
+}
+.pagination > span > input {
+  width: 18px;
+  border: none;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* 理财样式 */
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+
+.recommend {
+  background-color: white;
+  border-radius: 6px;
+}
+.recommend-title:before {
+  content: ".";
+  width: 6px;
+  height: 8px;
+  background-color: #ff5a59;
+  color: #ff5a59;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.recommend-title {
+  font-weight: 900;
+  padding: 20px 0 20px;
+}
+.product {
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  margin: 0 10px 10px;
+  width: 30%;
+  font-size: 12px;
+}
+.product:nth-child(1) {
+  margin-left: 20px;
+}
+.product:last-child {
+  margin-right: 20px;
+}
+.product > * {
+  margin-left: 10px;
+}
+.product > p:nth-child(3) > span,
+p:nth-child(4) > span {
+  font-weight: 600;
+}
+.product-title {
+  margin: 10px 10px;
+  font-weight: 900;
+}
+.product-rate {
+  font-size: 18px;
+  color: #ff5a59;
+}
+.buy-btn {
+  margin: 10px 0 10px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* 覆盖jquery tab默认样式 */
+.ui-widget.ui-widget-content {
+  border: 0px white;
+}
+.ui-widget-header {
+  border: 0;
+  background-color: white;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+  color: #ff5a59;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 0;
+  background: white;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  background: url(../../images/tab-bar.png) no-repeat bottom;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: white;
+}
