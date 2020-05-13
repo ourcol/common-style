@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>理财</title>
+    <link rel="stylesheet" href="./style/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./style/jquery-ui.theme.min.css" />
+
+    <link rel="stylesheet" href="./style/main.css" />
+    <!-- <script src="./js/query.js"></script> -->
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/jquery-ui.min.js"></script>
+    <script language="javascript">
+      $(function () {
+        $("#tab1").tabs();
+      });
+    </script>
+  </head>
+  <body>
+    <!-- 组件样式 -->
+    <link rel="stylesheet" href="./style//common.css" />
+    <div class="recommend">
+      <p class="recommend-title">推荐产品</p>
+      <div class="product-container">
+        <div class="product">
+          <p class="product-title">创赢乐享周期型</p>
+          <p>预计收益率 <span class="product-rate">4.53%</span></p>
+          <p>起购金额 <span>10万</span></p>
+          <p>产品期限 <span>111天</span></p>
+          <button class="primary-btn buy-btn">立即购买</button>
+        </div>
+        <div class="product">
+          <p class="product-title">创赢乐享周期型</p>
+          <p>预计收益率 <span class="product-rate">4.53%</span></p>
+          <p>起购金额 <span>10万</span></p>
+          <p>产品期限 <span>111天</span></p>
+          <button class="primary-btn buy-btn">立即购买</button>
+        </div>
+        <div class="product">
+          <p class="product-title">创赢乐享周期型</p>
+          <p>预计收益率 <span class="product-rate">4.53%</span></p>
+          <p>起购金额 <span>10万</span></p>
+          <p>产品期限 <span>111天</span></p>
+          <button class="primary-btn buy-btn">立即购买</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab1">
+      <ul>
+        <li><a href="#tab1-1">理财产品</a></li>
+        <li><a href="#tab1-2">我的理财</a></li>
+        <li><a href="#tab1-3">交易记录</a></li>
+      </ul>
+      <div id="tab1-1">
+        <!-- 表格上方的打印、下载栏 -->
+        <p class="over-table">您本账户 <span>2020-01-01</span> 至 <span>2020-05-30</span> 期间的交易如下  <span class="print-and-down"><img src="./images/print-table.png">打印 <img src="./images/download-table.png">下载</span></p>
+        <!-- 表格 -->
+        <table cellspacing="0">
+          <tr>
+            <th>收款账号</th>
+            <th>收款银行</th>
+            <th>交易日期</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td>60382 15000 3210 31312</td>
+            <td>招商银行</td>
+            <td>20200513</td>
+            <td><button class="handle-btn">删除</button><button class="handle-btn">增加</button></td>
+          </tr>
+        </table>
+        <!-- 分页 -->
+        <div class="pagination">
+          <span class="square">1</span> 共2页 <span class="next-page">下一页</span> 到<span class="square"><input id="" /></span> 页
+        </div>
+      </div>
+      <div id="tab1-2"></div>
+      <div id="tab1-3"></div>
+    </div>
+
+    <button class="primary-btn">主要按钮</button>
+
+    <button class="default-btn">默认按钮</button>
+
+    <button class="invalid-btn">不可点击时</button>
+
+    <button class="handle-btn">操作栏按钮</button>
+
+    <button class="choosed-btn">当天<span class="choosed-icon"></span></button>
+
+    <span class="tag-logo">推荐</span>
+
+    <span class="deal-success">交易成功</span>
+
+    <span class="deal-failed">交易失败</span>
+
+    <!-- 输入框 -->
+    <input type="text" placeholder="请输入" class="default-input" />
+
+    <!-- 选择框 -->
+    <select>
+      <!-- <option value="" disabled selected style="display: none;">请输入</option> -->
+      <option value="volvo">1</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <!-- radio 例-->
+    <input type="radio" id="1" name="example" />
+    <label for="1">账户查询</label>
+    <input type="radio" id="2" name="example" />
+    <label for="2">账户交易</label>
+
+    <!-- 进度条 -->
+    <div class="process-bar-outer">
+      <!-- 在style内自定义百分比 -->
+      <div class="process-bar-inner" style="width: 50%;"></div>
+    </div>
+
+    <style></style>
+  </body>
+</html>

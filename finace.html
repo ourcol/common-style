@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>理财</title>
+    <!-- <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+    <link rel="stylesheet" href="./style/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./style/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+    <!-- <script src="./layui.all.js"></script>   -->
+    <script language="javascript">
+      $(function () {
+        $("#tab1").tabs();
+        $("#tab2").tabs();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="nav-left"></div>
+    <div class="nav-center">
+      <div class="recommend">
+        <p class="recommend-title">推荐产品</p>
+        <div class="product-container">
+          <div class="product">
+            <p class="product-title">创赢乐享周期型</p>
+            <p>预计收益率 <span class="product-rate">4.53%</span></p>
+            <p>起购金额 <span>10万</span></p>
+            <p>产品期限 <span>111天</span></p>
+            <button class="common buy-btn">立即购买</button>
+          </div>
+          <div class="product">
+            <p class="product-title">创赢乐享周期型</p>
+            <p>预计收益率 <span class="product-rate">4.53%</span></p>
+            <p>起购金额 <span>10万</span></p>
+            <p>产品期限 <span>111天</span></p>
+            <button class="common buy-btn">立即购买</button>
+          </div>
+          <div class="product">
+            <p class="product-title">创赢乐享周期型</p>
+            <p>预计收益率 <span class="product-rate">4.53%</span></p>
+            <p>起购金额 <span>10万</span></p>
+            <p>产品期限 <span>111天</span></p>
+            <button class="common buy-btn">立即购买</button>
+          </div>
+        </div>
+      </div>
+      <div class="finace">
+        <div id="tab1">
+          <ul>
+            <li><a href="#tab1-1">理财产品</a></li>
+            <li><a href="#tab1-2">我的理财</a></li>
+            <li><a href="#tab1-3">交易记录</a></li>
+          </ul>
+          <div id="tab1-1">
+            <p class="tips">
+              温馨提示：欢迎购买我行理财产品，您当前的风险等级为 <span class="base-color">五级</span>，您可以适时重新进行 <span class="base-color">风险评估</span>。理财非存款、产品有风险、投资需谨慎。
+            </p>
+            <div class="select-div">
+              <div>
+                起购金额：
+                <ul class="horizon-li">
+                  <li><a href="#">全部</a></li>
+                  <li>0-6000元</li>
+                  <li>6000-6万元</li>
+                  <li>6-12万元</li>
+                  <li>12万元以上</li>
+                </ul>
+              </div>
+              <div>
+                产品期限：
+                <ul class="horizon-li">
+                  <li>全部</li>
+                  <li>0～3个月</li>
+                  <li>3～6个月</li>
+                  <li>6～12个月</li>
+                  <li>12个月以上</li>
+                </ul>
+              </div>
+              <div>
+                保本性质：
+                <ul class="horizon-li">
+                  <li>全部</li>
+                  <li>保险</li>
+                  <li>券商</li>
+                  <li>养老保障</li>
+                </ul>
+              </div>
+              <div>
+                风险等级：
+                <ul class="horizon-li">
+                  <li>全部</li>
+                  <li>高风险</li>
+                  <li>低风险</li>
+                  <li>中风险</li>
+                </ul>
+              </div>
+            </div>
+            <div class="type" id="tab2">
+              <ul>
+                <li><a href="#tab2-1">开放式</a></li>
+                <li><a href="#tab2-2">封闭式</a></li>
+              </ul>
+              <div id="tab2-1">
+                <ul class="sort-ul">
+                  <li>推荐<span class="up-tri"></span><span class="sub-tri"></span></li>
+                  <li>收益率<span class="up-tri"></span><span class="sub-tri"></span></li>
+                  <li>期限<span class="up-tri"></span><span class="sub-tri"></span></li>
+                  <li>笔数<span class="up-tri"></span><span class="sub-tri"></span></li>
+                </ul>
+                <ul class="product-ul">
+                  <li>
+                    <!-- <p class="product-name">本利乐享周期型</p> -->
+                    <div class="product-desc">
+                      <div>
+                        <p class="product-name">本利乐享周期型<span class="recommend-logo">推荐</span></p>
+                        <p class="product-rate">4.98%</p>
+                        <p class="product-info">预期收益率</p>
+                      </div>
+                      <div>
+                        <p>30万</p>
+                        <p class="product-info">起购金额</p>
+                      </div>
+                      <div>
+                        <p>111天</p>
+                        <p class="product-info">产品期限</p>
+                      </div>
+                      <div>
+                        <p>较低风险</p>
+                        <p class="product-info">风险等级</p>
+                      </div>
+                      <div>
+                        <div class="bar">
+                          <div></div>
+                        </div>
+                        <p class="product-info">已售<span>7%</span>，已售<span>2000</span>笔</p>
+                      </div>
+                    </div>
+                    <div class="im-buy-container">
+                      <button class="common buy-btn buy">立即购买</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="tab2-2"></div>
+            </div>
+          </div>
+          <div id="tab1-2">
+            <p></p>
+          </div>
+          <div id="tab1-3">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <p class="footer">版权所有 徽商银行 全国统一客服热线40088-96588 （安徽省内可直接拨打96588）</p>
+    </div>
+    <div class="nav-right">
+      <!-- lalala -->
+    </div>
+  </body>
+  <style>
+    .common {
+      width: 80px;
+      background-color: #ff5a59;
+      color: white;
+      border: 0px;
+      border-radius: 4px;
+      height: 20px;
+    }
+    .nav-left {
+      position: absolute;
+      width: 100px;
+      height: 100%;
+      margin-top: 100px;
+    }
+    .nav-center {
+      position: absolute;
+      left: 100px;
+      /* width: 80%; */
+      right: 100px;
+      height: 100%;
+      margin-top: 100px;
+    }
+    .nav-right {
+      position: absolute;
+      right: 0;
+      margin-top: 100px;
+      height: 100%;
+      width: 100px;
+    }
+    .product-container {
+      display: flex;
+      justify-content: center;
+    }
+    .recommend {
+      background-color: white;
+      border-radius: 6px;
+    }
+    .recommend-title:before {
+      content: ".";
+      width: 6px;
+      height: 8px;
+      background-color: #ff5a59;
+      color: #ff5a59;
+      font-size: 12px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .recommend-title {
+      font-weight: 900;
+      padding: 20px 0 20px;
+    }
+    .product {
+      display: inline-block;
+      border: 1px solid lightgray;
+      border-radius: 6px;
+      margin: 0 10px 10px;
+      width: 30%;
+      font-size: 12px;
+    }
+    .product:nth-child(1) {
+      margin-left: 20px;
+    }
+    .product:last-child {
+      margin-right: 20px;
+    }
+    .product > * {
+      margin-left: 10px;
+    }
+    .product > p:nth-child(3) > span,
+    p:nth-child(4) > span {
+      font-weight: 600;
+    }
+    .product-title {
+      margin: 10px 10px;
+      font-weight: 900;
+    }
+    .product-rate {
+      font-size: 18px;
+      color: #ff5a59;
+    }
+    .buy-btn {
+      margin: 10px 0 10px 10px;
+      outline: none;
+      cursor: pointer;
+    }
+    .finance {
+      color: white;
+    }
+    .ui-widget.ui-widget-content {
+      border: 0px white;
+    }
+    .ui-widget-header {
+      border: 0;
+      background-color: white;
+    }
+  
+    .ui-state-active a,
+    .ui-state-active a:link,
+    .ui-state-active a:visited {
+      color: #ff5a59;
+    }
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active,
+    a.ui-button:active,
+    .ui-button:active,
+    .ui-button.ui-state-active:hover {
+      border: 0;
+      background: white;
+    }
+    .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+      border-bottom: 1px solid #ff5a59;
+    }
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+    html .ui-button.ui-state-disabled:active {
+      border: none;
+      background: white;
+    }
+    a {
+      outline: none;
+    }
+    .finace {
+      margin-top: 10px 0;
+    }
+    .tips {
+      color: gray;
+      margin: 20px 10px;
+    }
+    .base-color {
+      color: #ff5a59;
+    }
+    .select-div {
+      background: #fff8f8;
+      border-radius: 6px;
+      margin: 0 10px;
+    }
+    .select-div > div:nth-child(1) {
+      padding-top: 6px;
+    }
+    .select-div > div {
+      margin-left: 20px;
+    }
+
+    .horizon-li > li,
+    .horizon-li {
+      display: inline-block;
+    }
+    .horizon-li {
+      margin: 6px;
+    }
+    .horizon-li > li {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .type {
+      margin: 0 10px;
+    }
+    .type > ul {
+      background: #f5f5f5;
+      margin: 10px 0 0 !important;
+    }
+    .type > ul > li {
+      display: inline-block;
+    }
+    .type > ul > li > a {
+      background: #f5f5f5;
+    }
+    .sort-ul {
+      border-bottom: 1px solid #d7d7d7;
+    }
+    .sort-ul > li {
+      position: relative;
+    }
+    .up-tri {
+      width: 0;
+      height: 0;
+      border: 4px solid;
+      border-color: transparent transparent #5c5c5c;
+      position: absolute;
+      top: 1px;
+    }
+    .sub-tri {
+      width: 0;
+      height: 0;
+      border: 4px solid;
+      border-color: #ff5a59 transparent transparent;
+      position: absolute;
+      bottom: 1px;
+    }
+    .sort-ul > li {
+      display: inline-block;
+      margin: 5px;
+    }
+    .ui-tabs .ui-tabs-panel {
+      padding: 0;
+    }
+    .product-desc {
+      position: relative;
+    }
+    .product-desc > div {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .product-desc > span {
+      margin-right: 20px;
+    }
+    .product-info {
+      color: #a6a6a6;
+      font-size: 10px;
+    }
+    .product-info > span {
+      color: #ff5a59;
+    }
+    .im-buy-container {
+      height: 80px;
+      width: 100px;
+      display: flex;
+      align-items: center;
+    }
+    .buy {
+      position: absolute;
+      margin: auto;
+      right: 0;
+      font-size: 12px !important;
+    }
+    .product-ul > li {
+      border-bottom: 1px solid #f8f8f8;
+      display: flex;
+    }
+    .product-name {
+      margin: 10px 0px;
+    }
+    .recommend-logo{
+      margin-left: 20px;
+      display: inline-block;
+      background: #ffe4d1;
+      font-size: 10px;
+      border-top-left-radius: 8px;
+      border-bottom-right-radius:8px;
+      color:#ffa35c;
+      width:28px;
+      text-align: center;
+      height: 16px;
+      vertical-align: middle;
+      line-height: 16px;
+    }
+    .bar {
+      height: 4px;
+      width: 100%;
+      background: #f3f3f3;
+      position: relative;
+      bottom: 8px;
+      border-radius: 4px;
+    }
+    .bar > div {
+      background: #ff5a59;
+      height: 4px;
+      width: 20px;
+      border-radius: 4px;
+    }
+    .footer {
+      text-align: center;
+      color: #484848;
+      font-size: 10px;
+      padding: 20px 0;
+    }
+    a:hover {
+      color: black;
+    }
+  </style>
+</html>
