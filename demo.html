@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="./style/main.css" />
     <!-- <script src="./js/query.js"></script> -->
-    
+
     <script src="./js/jquery.js"></script>
 
     <script src="./js/jquery-ui.min.js"></script>
@@ -55,9 +55,20 @@
         <li><a href="#tab1-2">我的理财</a></li>
         <li><a href="#tab1-3">交易记录</a></li>
       </ul>
+      <h1>表格(含打印、下载、分页)</h1>
       <div id="tab1-1">
         <!-- 表格上方的打印、下载栏 -->
-        <p class="over-table">您本账户 <span>2020-01-01</span> 至 <span>2020-05-30</span> 期间的交易如下  <span class="print-and-down"><img src="./images/print-table.png">打印 <img src="./images/download-table.png">下载</span></p>
+        <p class="over-table">
+          您本账户 <span>2020-01-01</span> 至
+          <span>2020-05-30</span>
+          期间的交易如下
+          <span class="print-and-down">
+            <span class="print-area"> <img src="./images/print-table.png" />打印</span>
+            <span class="vertical-line"></span>
+            <span class="down-area"> <img src="./images/download-table.png" />下载</span>
+          </span>
+        </p>
+
         <!-- 表格 -->
         <table cellspacing="0">
           <tr>
@@ -82,46 +93,95 @@
       <div id="tab1-3"></div>
     </div>
 
-    <button class="primary-btn">主要按钮</button>
-
-    <button class="default-btn">默认按钮</button>
-
-    <button class="invalid-btn">不可点击时</button>
-
-    <button class="handle-btn">操作栏按钮</button>
-
-    <button class="choosed-btn">当天<span class="choosed-icon"></span></button>
-
-    <span class="tag-logo">推荐</span>
-
-    <span class="deal-success">交易成功</span>
-
-    <span class="deal-failed">交易失败</span>
-
-    <!-- 输入框 -->
-    <input type="text" placeholder="请输入" class="default-input" />
-
-    <!-- 选择框 -->
-    <select>
-      <!-- <option value="" disabled selected style="display: none;">请输入</option> -->
-      <option value="volvo">1</option>
-      <option value="saab">Saab</option>
-      <option value="opel">Opel</option>
-      <option value="audi">Audi</option>
-    </select>
-
-    <!-- radio 例-->
-    <input type="radio" id="1" name="example" />
-    <label for="1">账户查询</label>
-    <input type="radio" id="2" name="example" />
-    <label for="2">账户交易</label>
-
-    <!-- 进度条 -->
-    <div class="process-bar-outer">
-      <!-- 在style内自定义百分比 -->
-      <div class="process-bar-inner" style="width: 50%;"></div>
+    <style></style>
+    <h1>居中表单</h1>
+    <p style="text-align: center; color: #ff5a59; margin-top: 10px;">产品有风险，投资须谨慎！</p>
+    <div class="center-container">
+      <p class="item">
+        <!-- 输入框 -->
+        <span class="item-label">基金公司</span>
+        <input type="text" placeholder="请输入" class="default-input" />
+      </p>
+      <p class="item">
+        <span class="item-label">姓名</span>
+        <!-- 选择框 -->
+        <select>
+          <!-- <option value="" disabled selected style="display: none;">请输入</option> -->
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+      </p>
+      <p class="item">
+        <span class="item-label easy-label">初始定投金额(元)</span>
+        <span class="item-content">无限制</span>
+      </p>
+      <div class="item-line"></div>
+      <p class="block-title">当前准基金净值</p>
+      <p class="item">
+        <!-- 输入框 -->
+        <span class="item-label">投资期数</span>
+        <input type="text" placeholder="请输入" class="default-input" />
+        <span class="item-desc">投资终止期数</span>
+      </p>
+      <button class="primary-btn" style="margin: 10px 0 10px 37%;">下一步</button>
     </div>
 
-    <style></style>
+    <h1>其他样式</h1>
+    <div style="margin-bottom: 40px; text-align: center;">
+      <h4>按钮</h4>
+      <button class="primary-btn">主要按钮</button>
+
+      <button class="default-btn">默认按钮</button>
+
+      <button class="invalid-btn">不可点击时</button>
+
+      <button class="choosed-btn">当天<span class="choosed-icon"></span></button>
+
+      <button class="handle-btn">操作栏按钮</button>
+
+      <span class="tag-logo">推荐</span>
+
+      <span class="deal-success">交易成功</span>
+
+      <span class="deal-failed">交易失败</span>
+
+      <h4>输入、选择框</h4>
+      <!-- 输入框 -->
+      <input type="text" placeholder="请输入" class="default-input" />
+
+      <!-- 选择框 -->
+      <select>
+        <!-- <option value="" disabled selected style="display: none;">请输入</option> -->
+        <option value="volvo">1</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+      <h4>单选框</h4>
+      <!-- radio 例-->
+      <input type="radio" id="1" name="example" />
+      <label for="1">账户查询</label>
+      <input type="radio" id="2" name="example" />
+      <label for="2">账户交易</label>
+
+      <h4>进度条</h4>
+      <!-- 进度条 -->
+      <div class="process-bar-outer">
+        <!-- 在style内自定义百分比 -->
+        <div class="process-bar-inner" style="width: 50%;"></div>
+      </div>
+    </div>
+
+    <style>
+      h1,
+      h4 {
+        margin: 20px 0 10px;
+        text-align: center;
+      }
+      h4 {
+        margin-top: 10px;
+      }
+    </style>
   </body>
 </html>
