@@ -393,6 +393,7 @@ label {
 .recommend-title {
   font-weight: 900;
   padding: 20px 0 20px;
+  font-size: 20px;
 }
 .product {
   display: inline-block;
