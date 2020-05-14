@@ -433,6 +433,9 @@ a.ui-button:active,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   background: url(../../images/tab-bar.png) no-repeat bottom;
 }
+.ui-tabs .ui-tabs-nav {
+  padding: 0 .2em 0;
+}
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
