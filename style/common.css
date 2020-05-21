@@ -614,13 +614,35 @@ table.product-table {
   display: inline-block;
   border-radius: 50%;
   background-color: #ff5a59;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   margin: 0 20px;
   color: white;
   text-align: center;
   line-height: 20px;
 }
-.timeline-p .stress{
-  color:#ff5a59;
+.timeline-p .stress {
+  color: #ff5a59;
+}
+
+/* 白色背景对勾图标 */
+.white-circle {
+  border: #ff5a59 1px solid;
+  border-radius: 50%;
+  margin:0 20px;
+  min-width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 18px;
+}
+/* 对勾 */
+.check-icon {
+  min-width: 4px;
+  min-height: 10px;
+  border-color: #ff5a59;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  margin-bottom: 4px;
 }
