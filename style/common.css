@@ -629,7 +629,7 @@ table.product-table {
 .white-circle {
   border: #ff5a59 1px solid;
   border-radius: 50%;
-  margin:0 20px;
+  margin: 0 20px;
   min-width: 18px;
   display: flex;
   align-items: center;
@@ -645,4 +645,48 @@ table.product-table {
   border-width: 0 1px 1px 0;
   transform: rotate(45deg);
   margin-bottom: 4px;
+}
+
+/*登录块*/
+.login-container {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  background: lightgray;
+  height: 300px;
+}
+/* 登录框 */
+.login-input {
+  margin-bottom: 10px;
+  width: 160px;
+}
+
+/* 欢迎登录 */
+.welcome-login {
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+/* 请使用手机银行扫码*/
+.scan-tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+/* 切换登录图标样式 */
+.login-toggle {
+  background: url(../images/qr-login-m.png) no-repeat;
+  position: absolute;
+  right: -4px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.scan-login {
+  display: none;
 }

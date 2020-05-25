@@ -193,7 +193,6 @@
         </span>
         <span>卖方已确认、买卖双方<span class="stress">携带资料</span>前往网点正式签订协议</span>
         <!-- <img src="./images/check-mark.png" alt="" srcset="" class="timeline-img" /> -->
-     
       </p>
 
       <!-- 竖线 -->
@@ -248,12 +247,45 @@
       <label for="2">账户交易</label>
 
       <h4>进度条</h4>
-  
+
       <!-- 进度条 -->
       <div class="process-bar-outer">
         <!-- 在style内自定义百分比 -->
         <div class="process-bar-inner" style="width: 50%;"></div>
       </div>
+
+      <h4>扫码登录</h4>
+      <!-- 扫码登录开始 -->
+      <script>
+        var inputLogin=true;
+        function toggleLogin(){
+          if(inputLogin){//切换至扫码登录
+            document.getElementById('inputLogin').style.display='none';
+            document.getElementById('scanLogin').style.display='block';
+            document.getElementById('loginToggle').style.background=('url(./images/qr-login-c.png) '+'no-repeat')
+            inputLogin=false;
+          }else{//切换至输入登录
+            document.getElementById('inputLogin').style.display='block';
+            document.getElementById('scanLogin').style.display='none';
+            document.getElementById('loginToggle').style.background=('url(./images/qr-login-m.png) '+'no-repeat')
+            inputLogin=true;
+          }
+        }
+      </script>
+      <div class="login-container">
+        <span class="login-toggle" id="loginToggle" onclick="toggleLogin()"></span>
+        <p class="welcome-login">欢迎登录</p>
+        <div id="inputLogin">
+          <input class="default-input login-input" type="text" placeholder="请输入用户名/身份证号码" /><br />
+          <input class="default-input login-input" type="text" /><br />
+          <button class="primary-btn" style="width:170px;margin-bottom: 20px;">登 入</button>
+        </div>
+        <div id="scanLogin" class="scan-login">
+          <img src="./images/qr-login-demo.png" alt="">
+          <p class="scan-tip"><img src="./images/qr-login-scan.png">请使用手机银行扫码登录</p>
+        </div>
+      </div>
+      <!-- 扫码登录结束 -->
     </div>
 
     <style>
